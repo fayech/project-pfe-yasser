@@ -1,1 +1,86 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Select an ITGC</h5>
+                <!--<span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>-->
+            </div>
+            <div class="card-block">
+                <form class="form-material" [formGroup]="contactForm">
+
+                    <div class="form-group form-default">
+                        <select name="select" class="form-control fill" formControlName="sitgc">
+                            <option [ngValue]="null" >Select One Value Only</option>
+                            <option *ngFor="let itgc  of ITGC" [value]="itgc.id">{{itgc.name}}</option>
+                        
+                       
+                        </select>
+                    </div>
+                 
+                
+              
+                </form>
+            </div>
+
+        </div>
+    </div>
+     <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Select an ITGC</h5>
+                <!--<span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>-->
+            </div>
+            <div class="card-block">
+                <form class="form-material"  [formGroup]="chickForm">
+
+                      
+                    <div class="form-group form-default">
+                        <select name="select" class="form-control fill" formControlName="chick"  *ngFor="let it of info">
+                            <option selected disabled >Select One Value Only</option>
+
+                            <option *ngFor="let sin of it.content"  [value]="sin.id">{{sin.name}}</option>
+
+                       
+                        </select>
+                    </div>
+             
+                
+                 
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Select an ITGC</h5>
+                <!--<span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>-->
+            </div>
+            <div class="card-block">
+                <form class="form-material" >
+                
+             
+              
+                
+                    <div class="form-group form-default" *ngFor="let it of infocheck">
+                    
+                        <div class="form-group form-default"  *ngFor="let datainfo of it.content">
+
+                            <label >
+                                <input type="checkbox" value="" >
+                                <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
+                                <span class="text-inverse" >{{datainfo.name}}</span>
+                            </label>
+                        </div>
+                    
+                    </div>
+
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-warning"> View details</a> 
 

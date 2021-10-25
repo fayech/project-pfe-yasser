@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,6 +12,11 @@ import { ViewsComponent } from './views/views.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
+import { ViewSectionComponent } from './layout/view-section/view-section.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +26,20 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     SectionComponent,
     PcodedNavbarComponent,
-    ViewsComponent
+    ViewsComponent,
+    LoginComponent,
+    ViewSectionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ToastrModule.forRoot(),
     HttpClientModule,
     CommonModule,
-    RouterModule
+    FormsModule,
+    ReactiveFormsModule, 
+    RouterModule,
+    BrowserAnimationsModule, // required animations module
   ],
   providers: [],
   bootstrap: [AppComponent]

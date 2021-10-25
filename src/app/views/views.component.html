@@ -1,1 +1,6 @@
-<app-navbar></app-navbar>
+
+<button type="button" class="btn btn-outline-danger" (click)="download()" style="margin-top: 20px;">download PDF</button>
+<button type="button" class="btn btn-success btn-sm" (click)="downloadPdf('./assets/file/DATA.xlsx','DATA')">
+    Save
+</button>
+<a href="./assets/file/DATA.xlsx" download="DATA.xlsx">Download File</a>
