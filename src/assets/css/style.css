@@ -236,7 +236,7 @@ code {
 
 .card .card-header h5:after {
 	content: "";
-	background-color: #448aff;
+	background-color: #2e2e38;
 	position: absolute;
 	left: -20px;
 	top: 0;
@@ -703,7 +703,7 @@ button.close {
 .color-accordion-block a:focus,
 .color-accordion-block a:hover {
 	color: #fff;
-	background: #4680ff;
+	background: #ffe600;
 }
 
 a.bg-default:focus,
@@ -884,7 +884,7 @@ a.bg-danger:hover {
 .md-tabs .nav-link.active,
 .md-tabs .nav-link.active:focus,
 .md-tabs .nav-link.active:hover {
-	color: #448aff;
+	color: #ffe600;
 	border: none;
 	background-color: transparent;
 	border-radius: 0;
@@ -896,7 +896,7 @@ a.bg-danger:hover {
 }
 
 .nav-tabs .slide {
-	background: #448aff;
+	background: #ffe600;
 	width: 100%;
 	height: 4px;
 	position: absolute;
@@ -971,7 +971,7 @@ a.bg-danger:hover {
 .table-primary,
 .table-primary>td,
 .table-primary>th {
-	background-color: #4680FE;
+	background-color: #ffe600;
 }
 
 .table-responsive {
@@ -1282,11 +1282,11 @@ img.comment-img {
 }
 
 .page-link {
-	color: #448aff;
+	color: #ffe600;
 }
 
 .page-item.active .page-link {
-	background-color: #448aff;
+	background-color: #ffe600;
 	border-color: #448aff;
 }
 
@@ -6124,7 +6124,7 @@ table tbody .border-bottom-info td {
 }
 
 .pcoded .pcoded-navbar .pcoded-navigation-label[menu-title-theme="theme1"] {
-	color: #448aff;
+	color: #ffe600;
 }
 
 .pcoded .pcoded-navbar .pcoded-search+.pcoded-navigation-label {
@@ -6415,7 +6415,7 @@ body[themebg-pattern="theme1"] {
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li .pcoded-submenu li.active>a,
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li .pcoded-submenu li:hover>a {
-	color: #448aff !important;
+	color: #ffe600 !important;
 }
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li .pcoded-submenu li.active>a {
@@ -6423,11 +6423,11 @@ body[themebg-pattern="theme1"] {
 }
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li:hover>a {
-	color: #448aff !important;
+	color: #ffe600 !important;
 }
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li:hover>a .pcoded-micon {
-	color: #448aff !important;
+	color: #ffe600 !important;
 }
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li:hover>a:before {
@@ -6436,7 +6436,7 @@ body[themebg-pattern="theme1"] {
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item>li.active>a,
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item>li:hover>a {
-	background: #448aff;
+	background: #ffe600;
 	color: #fff !important;
 }
 
@@ -6960,8 +6960,8 @@ body.menu-bottom #collapse-menu {
 .btn-primary:active,
 .sweet-alert button.confirm:active,
 .wizard>.actions a:active {
-	background-color: #0764ff !important;
-	border-color: #0764ff;
+	background-color: #ffe600 !important;
+	border-color: #ffe600;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	color: #fff;

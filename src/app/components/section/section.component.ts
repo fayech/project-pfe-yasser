@@ -94,10 +94,10 @@ constructor(private fb: FormBuilder,private check:FormBuilder) {
 }
   ngOnInit(): void {
     this.contactForm = this.fb.group({
-      sitgc: ["Select One Value Only"]
+      sitgc: ["Choose Option"]
     });
     this.chickForm = this.check.group({
-      chick: ["Select One Value Only"]
+      chick: ["Choose Option"]
     });
     this.setDefaults();
     this.contactForm.get("sitgc").valueChanges

@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-pcoded-navbar',
-  templateUrl: './pcoded-navbar.component.html',
-  styleUrls: ['./pcoded-navbar.component.sass']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.sass']
 })
-export class PcodedNavbarComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
-  
+
   ngOnInit(): void {
   }
   userForm:FormGroup;
@@ -21,9 +21,9 @@ export class PcodedNavbarComponent implements OnInit {
 
     this.userForm = this.fb.group({
       name : ['', Validators.required],
-      description : ['', Validators.required],
-      Start: ['', Validators.required],
-      Due: ['', Validators.required]
+      address : ['', Validators.required],
+      ContactNo: ['', Validators.required],
+      gender: ['', Validators.required]
     })
   }
 
@@ -45,6 +45,4 @@ export class PcodedNavbarComponent implements OnInit {
 
 
   }
-
 }
-

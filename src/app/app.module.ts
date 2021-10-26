@@ -17,6 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { ViewSectionComponent } from './layout/view-section/view-section.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { TestingdetailsComponent } from './components/testingdetails/testingdetails.component';
+import { TestinghomeComponent } from './components/testinghome/testinghome.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { ViewSectionComponent } from './layout/view-section/view-section.compone
     PcodedNavbarComponent,
     ViewsComponent,
     LoginComponent,
-    ViewSectionComponent
+    ViewSectionComponent,
+    ProjectsComponent,
+    TestingdetailsComponent,
+    TestinghomeComponent
   ],
   imports: [
     BrowserModule,

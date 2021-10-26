@@ -10,7 +10,7 @@
 
                     <div class="form-group form-default">
                         <select name="select" class="form-control fill" formControlName="sitgc">
-                            <option [ngValue]="null" >Select One Value Only</option>
+                            <option [ngValue]="null" >Choose Option</option>
                             <option *ngFor="let itgc  of ITGC" [value]="itgc.id">{{itgc.name}}</option>
                         
                        
@@ -36,7 +36,7 @@
                       
                     <div class="form-group form-default">
                         <select name="select" class="form-control fill" formControlName="chick"  *ngFor="let it of info">
-                            <option selected disabled >Select One Value Only</option>
+                            <option selected disabled >Choose Option</option>
 
                             <option *ngFor="let sin of it.content"  [value]="sin.id">{{sin.name}}</option>
 
@@ -82,5 +82,5 @@
         </div>
     </div>
 </div>
-<a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-warning"> View details</a> 
+<a href="/testing" target="_blank" class="btn btn-warning"> View details</a> 
 
