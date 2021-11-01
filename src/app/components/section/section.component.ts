@@ -42,7 +42,7 @@ TGCvalue: any = [
     'id': 1,
     "name":'Application',
   }, {
-    'id': 2, "name":'Database',
+    'id': 2, "name":'Infrastruure',
 
   }
   ]
@@ -52,28 +52,43 @@ TGCvalue: any = [
   TGCCHECK: any = [
     {
       'id': 1,
-     'content':[{
-      'id': 1,
-      "name":'User creation and  modification',
-    }, {
-      'id': 2, "name":'User access termination',
+     'content':[
+      {
+        'id': 1,
+        "name":'Change management process',
+      }, {
+        'id': 2, "name":'Change log and review',
+    
+      }, {
+        'id': 3, "name":'Segregation of environments'
+    
+      }
+    //    {
+    //   'id': 1,
+    //   "name":'User creation and  modification',
+    // }, {
+    //   'id': 2, "name":'User access termination',
   
-    }, {
-      'id': 3, "name":'High privilege Management'
+    // }, {
+    //   'id': 3, "name":'High privilege Management'
   
-    },
-    {
-      'id':4,"name":'User Review'
-    }
+    // },
+    // {
+    //   'id':4,"name":'User Review'
+    // }
     ]
     },
     {
       'id': 2,
      'content':[{
       'id': 1,
-      "name":'Application',
+      "name":'User Management',
     }, {
-      'id': 2, "name":'Database',
+      'id': 2, "name":'User Review',
+  
+    },
+    {
+      'id': 2, "name":'Password and system security',
   
     }
     ]

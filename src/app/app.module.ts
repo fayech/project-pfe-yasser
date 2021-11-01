@@ -20,6 +20,12 @@ import { ViewSectionComponent } from './layout/view-section/view-section.compone
 import { ProjectsComponent } from './components/projects/projects.component';
 import { TestingdetailsComponent } from './components/testingdetails/testingdetails.component';
 import { TestinghomeComponent } from './components/testinghome/testinghome.component';
+import { FolderStrutureComponent } from './components/folder-struture/folder-struture.component';
+import { FolderComponent } from './folder/folder.component';
+import { ChangeProcessComponent } from './components/change-process/change-process.component';
+import { PasswordSecComponent } from './components/password-sec/password-sec.component';
+import { KsrComponent } from './components/ksr/ksr.component';
+import { HomeKsrComponent } from './components/home-ksr/home-ksr.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +40,13 @@ import { TestinghomeComponent } from './components/testinghome/testinghome.compo
     ViewSectionComponent,
     ProjectsComponent,
     TestingdetailsComponent,
-    TestinghomeComponent
+    TestinghomeComponent,
+    FolderStrutureComponent,
+    FolderComponent,
+    ChangeProcessComponent,
+    PasswordSecComponent,
+    KsrComponent,
+    HomeKsrComponent
   ],
   imports: [
     BrowserModule,

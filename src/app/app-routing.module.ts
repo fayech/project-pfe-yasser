@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FolderStrutureComponent } from './components/folder-struture/folder-struture.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeKsrComponent } from './components/home-ksr/home-ksr.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PcodedNavbarComponent } from './components/pcoded-navbar/pcoded-navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -12,7 +14,7 @@ import { ViewsComponent } from './views/views.component';
 
 const routes: Routes = [
   {
-    path:'admin',
+    path:'itgc',
     component:NavbarComponent,
    
   },
@@ -38,6 +40,15 @@ const routes: Routes = [
     path:'testing',
     component:TestinghomeComponent,
   },
+  {
+    path:'folder-struture',
+    component:FolderStrutureComponent,
+  },
+  {
+    path:'ksr',
+    component:HomeKsrComponent,
+  },
+  
   
 ];
 

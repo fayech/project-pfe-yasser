@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { saveAs } from 'file-saver';
+import { HttpClient } from "@angular/common/http";
+import {ApiService} from '../services/api.service';
 
 @Component({
   selector: 'app-views',
@@ -7,8 +9,19 @@ import { saveAs } from 'file-saver';
   styleUrls: ['./views.component.sass']
 })
 export class ViewsComponent implements OnInit {
-
-  constructor() { }
+  apidata: any = [{"brand":"VOLKSWAGEN",
+  "model":"GOLF 7",
+  "carrosserie":"berline",
+  "energie":"essence",
+  "couleur":"noir",
+  "transmission":"traction",
+  "boite":"manuelle",
+  "age":"2015",
+  "kilometrage":"93000",
+  "puissance":"7"}
+  ];
+  constructor(private httpClient: HttpClient,public apoiervice:ApiService,
+    ) { }
 
   ngOnInit(): void {
   }
@@ -27,4 +40,15 @@ downloadPdf(pdfUrl: string, pdfName: string ) {
   //const pdfName = 'your_pdf_file';
   saveAs(pdfUrl, pdfName);
 }
+
+
+apitest(){
+  this.apoiervice.test(this.apidata)
+  .subscribe(data =>{
+    console.log("alllproduits",data);
+    
+  });
+
+}
+
 }
